@@ -1,0 +1,188 @@
+//入参
+{
+	"competitiorId"[
+		"0","1"
+	]
+}
+
+//出参
+{
+	"kpiInfo"[
+		{
+			"type":"1000",//自身公司
+			"competitiorId":"0",
+			"companyName":"永辉超市"
+			"baseInfo":{//基础信息
+				"公司名称":"xx",
+				"xx":"xx"
+			},
+			"lastKpiInfo":{//上季度数据
+				"营业收入":"xx",
+				"净利润":"",
+				"xx":""
+			},
+			"kpiInfo":{//条形统计数据
+				"营业收入":[
+					"2017Q1":"12345",
+					"2017Q2":"34567",
+					"2015Q4":""
+				],
+				"净利润":[
+					"2017Q1":"12345",
+					"2017Q2":"34567",
+					"2015Q4":""
+				]
+			}
+		},
+		{
+			"type":"2000",//其他公司
+			"competitiorId":"1",
+			"companyName":"永辉超市"
+			"baseInfo":{
+				"公司名称":"xx",
+				"xx":"xx"
+			},
+			"lastKpiInfo":{
+				"营业收入":"xx",
+				"净利润":"",
+				"xx":""
+			},
+			"kpiInfo":{
+				"营业收入":[
+					"2017Q1":"12345",
+					"2017Q2":"34567",
+					"2015Q4":""
+				],
+				"净利润":[
+					"2017Q1":"12345",
+					"2017Q2":"34567",
+					"2015Q4":""
+				]
+			}
+		}
+	]
+}
+
+
+//竞争分析入参
+{
+	"qryInfo":{
+		“shopId：“32434”，
+		"keyList":[
+			{ 
+				“SALE_INDUSTRY_YEAR"，
+			
+			}
+		]
+	}
+}
+
+//竞争分析出参
+{
+	"resultCode":"",
+	"resultMsg":"",
+	"qryReponInfo":{
+		"responList":[
+			{
+				"key":"cpySalesAmount",
+				"dataList":[
+					{
+						"serial":"永辉超市",
+						"params"[
+							{
+								"key":"2015Q1",
+								"value":"8000000"
+							}，
+							{
+								"key":"2016Q2",
+								"value":"23232"
+							}
+						]
+					},
+					{
+						"serial":"lh超市",
+						"params"[
+							{
+								"key":"2015Q1",
+								"value":"8000000"
+							}，
+							{
+								"key":"2016Q2",
+								"value":"23232"
+							}
+						]
+					}
+				]
+			},
+			{
+				"key":"cpySalesAmount1",
+				"dataList":[
+					{ 
+						"key":"永辉超市",
+						"value":"123456"
+					},{
+						"key":"永辉超市",
+						"value":"123456"
+					}
+				]
+			}
+		]
+	}
+}
+
+
+//宏观经济入参
+{
+	"qryInfo":{
+		"keyList":[
+			{ 
+				“macroEconomyTrend"
+			}
+		]
+	}
+}
+
+//宏观经济出参
+{
+	"resultCode":"",
+	"resultMsg":"",
+	"qryReponInfo":{
+		"responList":[
+			{
+				"key":"macroEconomyTrend",
+				"dataList":[
+					{
+						"serial":"国内生产总值（GDP）",
+						"params"[
+							{
+								"key":"2015Q1",
+								"value":"8000000"
+							}，
+							{
+								"key":"2016Q2",
+								"value":"23232"
+							}
+						]
+					},
+					{
+						"serial":"采购经理人指数（PMI) ",
+						"params"[
+							{
+								"key":"2015Q1",
+								"value":"8000000"
+							}，
+							{
+								"key":"2016Q2",
+								"value":"23232"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
+
+
+
+
